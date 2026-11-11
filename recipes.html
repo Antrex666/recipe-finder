@@ -1,0 +1,75 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Recipes | Healthy Recipe Finder</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&family=Outfit:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <header class="navbar">
+      <div class="logo">
+        <span class="leaf-icon">🌿</span> Healthy Recipe Finder
+      </div>
+      <nav>
+        <a href="index.html">Home</a>
+        <a href="recipes.html" class="active">Recipes</a>
+      </nav>
+    </header>
+
+    <main class="recipes-page">
+      <div class="page-header">
+        <h1>Explore our simple, healthy recipes</h1>
+        <p>
+          Discover eight quick, whole-food recipes that you can cook right now.
+        </p>
+      </div>
+
+      <!-- Filters Section -->
+      <section class="filters">
+        <div class="filter-group">
+          <label for="search">Search</label>
+          <input
+            type="text"
+            id="search"
+            placeholder="Search by name or ingredient..."
+          />
+        </div>
+        <div class="filter-group">
+          <label for="prep-time">Max Prep Time</label>
+          <select id="prep-time">
+            <option value="999">Any</option>
+            <option value="10">10 mins</option>
+            <option value="15">15 mins</option>
+            <option value="20">20 mins</option>
+          </select>
+        </div>
+        <div class="filter-group">
+          <label for="cook-time">Max Cook Time</label>
+          <select id="cook-time">
+            <option value="999">Any</option>
+            <option value="10">10 mins</option>
+            <option value="15">15 mins</option>
+            <option value="20">20 mins</option>
+            <option value="30">30 mins</option>
+          </select>
+        </div>
+      </section>
+
+      <!-- Recipe Grid -->
+      <section class="recipe-grid" id="recipe-grid">
+        <!-- Cards will be injected here by JavaScript -->
+      </section>
+    </main>
+
+    <footer>
+      <p>&copy; 2024 Healthy Recipe Finder. Built for Frontend Mentor.</p>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
